@@ -5,9 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "postinstall":"npm run build",
+    "start":"node app.js"
   },
   "dependencies": {
+    "express": "^4.16.3",
+    "path": "^0.12.7"
     "@fortawesome/fontawesome": "^1.1.5",
     "@fortawesome/fontawesome-free-solid": "^5.0.10",
     "@fortawesome/vue-fontawesome": "0.0.22",
@@ -20,15 +24,13 @@
     "vue-awesome": "^2.2.3",
     "vue-axios": "^2.1.1",
     "vue-cookies": "^1.5.6",
-    "vue-resource": "^1.5.0",
+    "vue-resource": "^1.5.0"
+  },
+  "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.6",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.6",
     "@vue/cli-service": "^3.0.0-beta.6",
     "vue-template-compiler": "^2.5.13",
-    "express": "^4.16.3",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {
   },
   "babel": {
     "presets": [
